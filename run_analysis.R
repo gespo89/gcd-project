@@ -37,7 +37,7 @@ testData <- read.table(testPath)
 testSubjects <- read.table(testSubjectPath)
 testLabels <- read.table(testLabelPath)
 
-# Fix some column names to be uniform. This saves some cbind headache down the road.
+# Fix some column names to be uniform. This saves some rbind headache down the road.
 colnames(trainSubjects) <- "subject"
 colnames(testSubjects) <- "subject"
 colnames(trainLabels) <- "activity"
