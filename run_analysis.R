@@ -1,3 +1,8 @@
+# run_analysis.R
+# Author: Geoffrey Esposito
+# Script to pull in accelerometer data from the Samsung Galaxy S smartphone and transform it into a "tidy" data set as per the requirements of the
+# "Getting and Cleaning Data" course on Coursera
+
 # Load necessary libaries
 message("Loading dependencies...")
 library('dplyr')
@@ -67,3 +72,4 @@ write.table(tidy, "tidy.txt", row.name=FALSE)
 # Return the data
 print(tidy)
 message("Output is in variable \"tidy\" and output to file \"tidy.txt\"")
+return(tidy)
